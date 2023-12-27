@@ -22,14 +22,19 @@ p {
     display: none;
 }
 
+body {
+    background-color: #161618;
+}
+
 /* ------------------------------------------------- TEMAS ------------------------------------------------- */
 [data-bs-theme=light] {
-    --bs-heading-color: #940e0e;
-    --bs-offcanvas-bg: #fff;
+    --bs-heading-color: #fff;
     --bs-offcanvas-text: #000;
+
 }
 
 [data-bs-theme=dark] {
+    --bs-offcanvas-text: #fff;
     --bs-heading-color: #fff;
     --bs-body-bg: #161618;
 
@@ -72,6 +77,7 @@ p {
     box-shadow: 4px 2px 21px 0px rgba(0, 0, 0, 0.55);
     -webkit-box-shadow: 4px 2px 21px 0px rgba(0, 0, 0, 0.55);
     -moz-box-shadow: 4px 2px 21px 0px rgba(0, 0, 0, 0.55);
+    background-color: var(--bs-offcanvas-bg);
 }
 
 
