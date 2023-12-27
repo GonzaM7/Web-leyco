@@ -25,7 +25,8 @@ p {
 /* ------------------------------------------------- TEMAS ------------------------------------------------- */
 [data-bs-theme=light] {
     --bs-heading-color: #940e0e;
-    --bs-body-bg: #161618;
+    --bs-offcanvas-bg: #fff;
+    --bs-offcanvas-text: #000;
 }
 
 [data-bs-theme=dark] {
@@ -77,13 +78,13 @@ p {
 .offcanvas-title {
     font-family: 'Poppins';
     font-size: 2rem;
-    color: white;
+    color: var(--bs-offcanvas-text)
 }
 
 .offcanvas-subtitle {
     font-family: 'Poppins';
     font-size: 0.9rem;
-    color: whitesmoke;
+    color: var(--bs-offcanvas-text)
 }
 
 .offcanvas-brand__text {
