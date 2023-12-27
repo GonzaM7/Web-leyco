@@ -1,0 +1,423 @@
+/* ------------------------------------------------- IMPORTS ------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@700&family=Montserrat:wght@300;500;900&family=Poppins:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+/* ------------------------------------------------- CSS BASE ------------------------------------------------- */
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2 {
+    font-family: 'Poppins';
+}
+
+p {
+    font-family: 'Lato';
+
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* ------------------------------------------------- TEMAS ------------------------------------------------- */
+[data-bs-theme=light] {
+    --bs-heading-color: #940e0e;
+    --bs-body-bg: #161618;
+}
+
+[data-bs-theme=dark] {
+    --bs-heading-color: #fff;
+    --bs-body-bg: #161618;
+
+}
+
+
+/* ------------------------------------------------- OFFCANVAS ------------------------------------------------- */
+.transicion * {
+    transition: all 0.7s;
+}
+
+#logo {
+    width: 45px;
+    height: 45px;
+    margin: 1%;
+}
+
+.btn-menu {
+    margin: 10px;
+    background-color: #332c29;
+    padding: 0.75rem 1.5rem;
+    font-family: 'Poppins';
+    font-weight: 500;
+    color: #fff;
+    border: none;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    box-shadow: 4px 2px 21px 0px rgba(0, 0, 0, 0.55);
+}
+
+.btn-menu:hover,
+.sbtn-menu:active {
+    background-color: #9c3e13;
+    color: #fff;
+}
+
+.offcanvas {
+    --bs-offcanvas-width: 380px;
+    box-shadow: 4px 2px 21px 0px rgba(0, 0, 0, 0.55);
+    -webkit-box-shadow: 4px 2px 21px 0px rgba(0, 0, 0, 0.55);
+    -moz-box-shadow: 4px 2px 21px 0px rgba(0, 0, 0, 0.55);
+}
+
+
+.offcanvas-title {
+    font-family: 'Poppins';
+    font-size: 2rem;
+    color: white;
+}
+
+.offcanvas-subtitle {
+    font-family: 'Poppins';
+    font-size: 0.9rem;
+    color: whitesmoke;
+}
+
+.offcanvas-brand__text {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.list-group a {
+    color: #5c6b73;
+    font-family: 'Poppins';
+    font-weight: 500;
+    padding-top: 0.5rem;
+}
+
+.icon {
+    padding: 0.5rem 1rem;
+}
+
+.icon-mode {
+    width: 240px;
+}
+
+.align-item {
+    width: 4rem;
+}
+
+.list-group-item {
+    display: flex;
+    align-items: center;
+    padding: 2%;
+    margin: 4% 3%;
+    height: 50px;
+    border-radius: 0.3rem;
+    border: none;
+}
+
+.items-lista:hover {
+    background-color: #9c3e13;
+    color: #fff;
+    transition: all ease 0.5s;
+}
+
+.theme {
+    color: #5c6b73;
+    font-weight: 500;
+    margin-top: 18rem;
+    padding-top: 0.5rem;
+}
+
+#text-mode {
+    font-family: 'Poppins';
+    padding-left: 0.3rem
+}
+
+/* ------------------------------------------------- HERO ------------------------------------------------- */
+
+.container-hero {
+    height: 100vh;
+    background-image: url(img/campo.jpg);
+    background-size: cover;
+    z-index: 1000;
+    display: flex;
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    backdrop-filter: brightness(85%);
+}
+
+.espacio {
+    margin-top: 10%;
+}
+
+.hero1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-title {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    backdrop-filter: brightness(70%);
+}
+
+.hero-container {
+    height: 25rem;
+}
+
+.h-title {
+    font-family: 'Poppins';
+    font-size: 7rem;
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+    text-shadow: var(--title-shadow);
+}
+
+.hs-title {
+    margin-bottom: 3rem;
+    z-index: 1;
+}
+
+#h-title_s {
+    color: #9c3e13;
+
+}
+
+.h-button {
+    text-decoration: none;
+    color: var(--bs-heading-color);
+    border-radius: 2rem;
+    background-color: #9c3e13;
+    margin-top: 3rem;
+    padding: 0.7rem 4rem;
+}
+
+
+
+
+/* ------------------------------------------------- BOTON HERO ------------------------------------------------- */
+.header-one .header-content-area .primary-btn-outline {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.header-one .header-content-area .active.primary-btn-outline,
+.header-one .header-content-area .primary-btn-outline:hover,
+.header-one .header-content-area .primary-btn-outline:focus {
+    background: var(--primary-dark);
+    color: var(--white);
+}
+
+.header-one .header-content-area .deactive.primary-btn-outline {
+    color: var(--dark-3);
+    border-color: var(--gray-4);
+    pointer-events: none;
+}
+
+/*===== HEADER ONE =====*/
+.header-one {
+    position: relative;
+}
+
+.header-one .header-content-area {
+    background-color: var(--primary);
+    position: relative;
+    padding: 150px 0;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .header-one .header-content-area {
+        padding: 100px 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .header-one .header-content-area {
+        padding: 60px 0;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .header-one .header-content-area {
+        height: 900px;
+    }
+}
+
+@media (max-width: 767px) {
+    .header-one .header-content-area {
+        height: 550px;
+    }
+}
+
+.header-one .header-content-area .primary-btn-outline {
+    border-color: var(--white);
+    background-color: var(--white);
+    color: var(--primary);
+}
+
+.header-one .header-content-area .primary-btn-outline:hover {
+    background-color: transparent;
+    border-color: var(--white);
+    color: var(--white);
+}
+
+.header-one .header-wrapper {
+    position: relative;
+}
+
+.header-one .header-content {
+    max-width: 540px;
+    position: relative;
+    z-index: 5;
+}
+
+.header-one .header-title {
+    color: var(--white);
+    font-weight: 800;
+    font-size: 7rem;
+    font-weight: bold;
+}
+
+.header-one .text-lg {
+    color: var(--white);
+    font-weight: 300;
+    margin-top: 16px;
+}
+
+.header-one .header-btn {
+    margin-top: 40px;
+}
+
+.header-one .header-image {
+    text-align: center;
+}
+
+.header-one .header-image .image {
+    max-width: 730px;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    .header-one .header-image .image {
+        max-width: 600px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .header-one .header-image .image {
+        max-width: 550px;
+    }
+}
+
+.header-one .header-image .image img {
+    width: 100%;
+}
+
+.header-one .header-shape {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.header-one .header-shape img {
+    width: 100%;
+}
+
+.letradivisor {
+    color: #9c3e13;
+}
+
+.boton-h {
+    background-color: #9c3e13;
+    font-weight: 400;
+}
+
+.boton-h:hover {
+    background-color:
+        #9c3e13;
+}
+
+/* ------------------------------------------------- BOTON HERO ------------------------------------------------- */
+
+
+
+/* ------------------------------------------------- ABOUT US #1e1c1a ------------------------------------------------- */
+.about-container {
+    height: 54%;
+    background-color: var(--primary);
+    position: relative;
+    padding-inline: 0;
+}
+
+.container1 {
+    height: 112.5rem;
+}
+
+.about-items {
+    right: 1%;
+    left: 1%;
+    position: absolute;
+    top: 4.5%;
+    margin-inline: 2%;
+}
+
+.f-wrap {
+    width: 100%;
+    height: 20rem;
+    background-color: #9c3e13;
+    position: relative;
+}
+
+.f-item,
+.s-item {
+    color: #fff;
+    border: 0.6rem solid transparent;
+    background-color: transparent;
+}
+
+.s-item__body {
+    margin-top: 6%;
+    display: flex;
+    flex-direction: column-reverse;
+    font-family: 'Lato';
+}
+
+.card_img {
+    height: 25rem;
+    width: 100%;
+    border-radius: 0.3rem;
+}
+
+.item-card_title1 {
+    margin-top: 7%;
+    font-size: 1.7rem;
+}
+
+.item-card_title2 {
+    margin: 2% 0;
+    font-size: 1.7rem;
+}
+
+.item-card_text {
+    margin: 2% 0;
+}
+
+.item-card_text2 {
+    margin-bottom: 13%;
+}
