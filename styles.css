@@ -162,7 +162,7 @@ body {
 }
 
 .espacio {
-    margin-top: 10%;
+    margin-top: 20%;
 }
 
 .hero1 {
@@ -287,7 +287,7 @@ body {
 }
 
 .header-one .header-content {
-    max-width: 540px;
+    width: 100%;
     position: relative;
     z-index: 5;
 }
