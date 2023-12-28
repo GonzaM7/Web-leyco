@@ -204,25 +204,6 @@ body {
 
 }
 
-.h-button {
-    text-decoration: none;
-    color: var(--bs-heading-color);
-    border-radius: 2rem;
-    background-color: #9c3e13;
-    margin-top: 3rem;
-    padding: 0.7rem 4rem;
-}
-
-
-
-
-/* ------------------------------------------------- BOTON HERO ------------------------------------------------- */
-
-
-
-
-
-
 .header-title {
     color: var(--white);
     font-weight: 800;
@@ -236,22 +217,34 @@ body {
     margin-top: 16px;
 }
 
+.letradivisor {
+    color: #9c3e13;
+}
+
+/* ------------------------------------------------- BOTON HERO ------------------------------------------------- */
+
+.h-button {
+    text-decoration: none;
+    color: var(--bs-heading-color);
+    border-radius: 2rem;
+    background-color: #9c3e13;
+    margin-top: 3rem;
+    padding: 0.7rem 4rem;
+}
+
 .header-btn {
     margin-top: 40px;
 }
 
-.letradivisor {
-    color: #9c3e13;
-}
+
 
 .boton-h {
     background-color: #9c3e13;
     font-weight: 400;
 }
 
-
-
 /* ------------------------------------------------- BOTON HERO ------------------------------------------------- */
+
 
 
 
