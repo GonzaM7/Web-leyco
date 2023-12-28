@@ -149,9 +149,8 @@ body {
 
 .container-hero {
     height: 100vh;
-    background-image: url(img/campo.jpg);
+    background-image: url(img/campo.webp);
     background-size: cover;
-    z-index: 1000;
     display: flex;
 }
 
@@ -163,12 +162,6 @@ body {
 
 .espacio {
     margin-top: 20%;
-}
-
-.hero1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .hero-title {
@@ -209,11 +202,13 @@ body {
     font-weight: 800;
     font-size: 7rem;
     font-weight: bold;
+    letter-spacing: 0;
 }
 
 .text-lg {
     color: var(--white);
     font-weight: 300;
+    font-size: 1.4rem;
     margin-top: 16px;
 }
 
